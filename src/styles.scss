@@ -1,0 +1,20 @@
+.App {
+  font-family: sans-serif;
+  text-align: center;
+}
+
+$cd-btn: #011c37;
+$cd-txt: #15DEA5;
+.btn {
+    background: $cd-btn;
+    color: $cd-txt;
+    font-size: 2rem;
+    cursor: pointer;
+    padding: 1.35rem 2rem;
+    border-radius: 8rem;
+    transform: scale(1);
+    transition: transform 400ms;
+    &:hover {
+      transform: scale(1.15);
+    }
+}
