@@ -8,19 +8,20 @@ $clr-btn: #15DEA5;
     color: white;
     font-style: italic;
     &:hover {
-        & .btn__bg {
+        &::after {
             opacity: 1;
         }
     }
-    &__bg {
-        position: absolute;
-        top: 0;
-        right: 0;
-        bottom: 0;
-        left: 0;
-        background-color: darken($clr-btn, 5);
-        opacity: 0;
-        z-index: -1;
-        transition: opacity 250ms;
+    &::after {
+      content: "";
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      background-color: darken($clr-btn, 5);
+      opacity: 0;
+      z-index: -1;
+      transition: opacity 250ms;
     }
 }
