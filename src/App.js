@@ -1,6 +1,7 @@
 import React from "react";
 import "./styles.scss";
 import Button from "./Components/3dbutton/Button";
+import Opacity from "./Components/opacity/Opacity";
 
 export default function App() {
   return (
@@ -12,6 +13,7 @@ export default function App() {
         </div>
       </div>
       <Button />
+      <Opacity />
     </div>
   );
 }

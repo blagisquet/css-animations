@@ -53,11 +53,18 @@ $btn-height: 7.5vw;
             transform: rotateX(0deg) translateZ($btn-height/2);
             @include facet;
             background: $cd-off;
+            transition: background-color 250ms;
+            &:hover {
+                background-color: darken($cd-off, 5);
+            }
         }
         .btn__flip--on {
             transform: rotateX(90deg) translateZ($btn-height/2);
             @include facet;
             background: $cd-on;
+            &:hover {
+                background-color: darken($cd-on, 5);
+            }
         }
     }
 }
